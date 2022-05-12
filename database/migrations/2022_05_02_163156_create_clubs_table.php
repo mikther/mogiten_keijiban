@@ -15,6 +15,10 @@ class CreateClubsTable extends Migration
     {
         Schema::create('clubs', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->incremants('school_id');
+            $table->string('club_name', 50);
+            $table->string('mail_add', 50);
+            $table->string('budget', 10);
             $table->timestamps();
         });
     }

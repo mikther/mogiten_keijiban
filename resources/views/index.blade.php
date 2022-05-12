@@ -13,7 +13,6 @@
       <h1>模擬店掲示板</h1>
       <!-- 画面上部バー -->
       <div class'posts'>
-        @foreach($posts as $post)
           <h3 class'post'>
               <a href="/posts/{{ $->id }}">ログイン</a>
               <a href="/posts/{{ $school->id }}">大学ページ</a>
@@ -107,7 +106,7 @@
        </div>
        
        <div class='paginate'>
-            {{ $App->links() }}
+            {{ $->links() }}
        </div>
     </body>
 </html>

@@ -11,10 +11,11 @@
 |
 */
 
-Route::get('/Club','AppController@index');
-Route::get('/School','AppController@index');
-Route::get('/User','AppController@index');
-Route::get('/Shop','AppController@index');
+Route::get('/club','AppController@index');
+Route::get('/school','AppController@index');
+Route::get('/user','AppController@index');
+Route::get('/shop','AppController@index');
+Route::get('/posts/create', 'AppController@create');
 
 Route::get('/', 'AppController@index');
 
